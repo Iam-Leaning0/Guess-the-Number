@@ -178,3 +178,13 @@ button:hover {
 .hidden {
     display: none;
 }
+
+.credits {
+    text-align: center;
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: crimson;
+}
