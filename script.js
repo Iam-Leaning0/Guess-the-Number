@@ -14,7 +14,7 @@ const howToBtn = document.querySelector('.instructions-btn');
 const closeBtn = document.querySelector('.close-btn');
 
 // Generating a Random Number to Guess by the User
-let secretNumber = Math.round(Math.random() * 30) + 1;
+let secretNumber = Math.floor(Math.random() * 30 + 1);
 
 // Initiate Score and Highscore Values
 let score = 30;
@@ -25,6 +25,7 @@ playBtn.addEventListener('click', function () {
 
     // Store user input value
     const userInput = Number(inputValue.value);
+
 
     document.querySelector('.one input').style = 'border: 5px solid crimson;';
 
