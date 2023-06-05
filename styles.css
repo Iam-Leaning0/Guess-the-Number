@@ -13,7 +13,8 @@ html {
 body {
     background: url(/cool-background.png);
     font-family: 'Odibee Sans', cursive;
-    color: #88C8FF
+    color: #88C8FF;
+    min-height: 100vh;
 }
 
 h1 {
@@ -46,7 +47,7 @@ button:hover {
 
 .container {
     margin: 8rem auto;
-    height: auto;
+    height: 90vh;
     max-width: 80rem;
     width: 100%;
 }
