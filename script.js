@@ -12,6 +12,7 @@ const playBtn = document.querySelector('.btn');
 const resetBtn = document.querySelector('.reset-btn');
 const howToBtn = document.querySelector('.instructions-btn');
 const closeBtn = document.querySelector('.close-btn');
+const overlay = document.querySelector('.overlay');
 
 // Generating a Random Number to Guess by the User
 let secretNumber = Math.floor(Math.random() * 30 + 1);
@@ -50,7 +51,7 @@ playBtn.addEventListener('click', function () {
 
         document.querySelector('.bottom').style = 'border: 3px solid #60b347;';
 
-        document.querySelector('.one input').style = 'border: 5px solid #60b347;';
+        document.querySelector('.one input').style = 'border: 3px solid #60b347;';
 
         attemptsDisplay.textContent = '';
 
@@ -118,12 +119,14 @@ howToBtn.addEventListener('click', function () {
 
     // Open modal
     instructionsDisplay.classList.remove('hidden');
+    overlay.classList.remove('hidden');
 });
 
 closeBtn.addEventListener('click', function () {
 
     //Close modal
     instructionsDisplay.classList.add('hidden');
+    overlay.classList.add('hidden');
 })
 
 
