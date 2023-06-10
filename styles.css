@@ -217,6 +217,7 @@ button:hover {
 }
 
 .credits {
+    margin-top: 2rem;
     text-align: center;
     font-size: 2rem;
     z-index: 400;
